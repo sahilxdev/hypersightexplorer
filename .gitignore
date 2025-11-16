@@ -46,9 +46,7 @@ credentials.json
 # ============================================
 # DOCUMENTATION (as per user request)
 # ============================================
-# Do not push README and documentation
-README.md
-*.md
+
 
 # Claude Code folder
 .claude/
