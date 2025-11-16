@@ -1,0 +1,89 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bgGradient)"/>
+  
+  <!-- Outer ring with glow -->
+  <circle cx="256" cy="256" r="200" stroke="url(#ringGradient)" stroke-width="8" fill="none" opacity="0.6"/>
+  <circle cx="256" cy="256" r="200" stroke="url(#ringGradient)" stroke-width="4" fill="none" opacity="0.3"/>
+  
+  <!-- Blockchain hexagon structure -->
+  <g transform="translate(256, 256)">
+    <!-- Center hexagon -->
+    <path d="M 0,-60 L 52,-30 L 52,30 L 0,60 L -52,30 L -52,-30 Z" 
+          fill="url(#hexGradient)" stroke="#ffffff" stroke-width="3"/>
+    
+    <!-- Top hexagon -->
+    <path d="M 0,-120 L 35,-100 L 35,-80 L 0,-60 L -35,-80 L -35,-100 Z" 
+          fill="url(#hexGradient2)" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Bottom hexagon -->
+    <path d="M 0,120 L 35,100 L 35,80 L 0,60 L -35,80 L -35,100 Z" 
+          fill="url(#hexGradient2)" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Left hexagon -->
+    <path d="M -90,0 L -55,-20 L -55,20 L -90,40 L -125,20 L -125,-20 Z" 
+          fill="url(#hexGradient2)" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Right hexagon -->
+    <path d="M 90,0 L 125,-20 L 125,20 L 90,40 L 55,20 L 55,-20 Z" 
+          fill="url(#hexGradient2)" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+    
+    <!-- Connecting lines -->
+    <line x1="0" y1="-60" x2="0" y2="-80" stroke="#EC4899" stroke-width="3" opacity="0.8"/>
+    <line x1="0" y1="60" x2="0" y2="80" stroke="#EC4899" stroke-width="3" opacity="0.8"/>
+    <line x1="-52" y1="0" x2="-72" y2="0" stroke="#EC4899" stroke-width="3" opacity="0.8"/>
+    <line x1="52" y1="0" x2="72" y2="0" stroke="#EC4899" stroke-width="3" opacity="0.8"/>
+    
+    <!-- Center pulse effect -->
+    <circle cx="0" cy="0" r="15" fill="#ffffff" opacity="0.9"/>
+    <circle cx="0" cy="0" r="10" fill="url(#centerGradient)"/>
+  </g>
+  
+  <!-- Activity pulse indicators -->
+  <circle cx="140" cy="140" r="8" fill="#F59E0B" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="372" cy="140" r="8" fill="#10B981" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="140" cy="372" r="8" fill="#8B5CF6" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="372" cy="372" r="8" fill="#EC4899" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Gradients -->
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#312e81;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1b4b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Ring gradient -->
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Hexagon gradient -->
+    <linearGradient id="hexGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#EC4899;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="hexGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EC4899;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <!-- Center gradient -->
+    <radialGradient id="centerGradient">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+</svg>

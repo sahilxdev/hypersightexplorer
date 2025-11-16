@@ -1,0 +1,79 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================================
+# SECURITY: Environment & Secret Files
+# ============================================
+# ALL environment files (local and production)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+*.env
+
+# But DO allow .env.example (template file without secrets)
+!.env.example
+
+# API Keys and Secrets
+**/secrets/
+**/config/secrets.*
+api-keys.txt
+secrets.txt
+credentials.json
+
+# ============================================
+# DOCUMENTATION (as per user request)
+# ============================================
+# Do not push README and documentation
+README.md
+*.md
+
+# Claude Code folder
+.claude/
+
+SUBMISSION_GUIDE.md
+QUICK_COMMANDS.md
+DATA_AUTHENTICITY.md
+TECHNICAL_OVERVIEW.md
+USER_GUIDE.md
+QUICKSTART.md
+
+# Screenshots folder
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.mp4
+
+# ============================================
+# VERCEL
+# ============================================
+.vercel
+.vercel.json
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
